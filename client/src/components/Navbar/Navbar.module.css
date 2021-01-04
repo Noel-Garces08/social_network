@@ -1,0 +1,33 @@
+.navbar {
+    height: 65px;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0rem 2rem rgba(51, 51, 51, .25);
+}
+
+.navbar_left {
+    display: flex;
+}
+
+.hamburger, .navbar_logo, .navbar_icons {
+    font-size: 2rem;
+    color: #27292B;
+}
+
+.navbar_logo {
+    padding-left: 2rem;
+}
+
+.navbar_icons {
+    margin-left: auto;
+}
+
+.navbar_icons i {
+    padding: .6rem .8rem;
+}
+
+.navbar_icons i:last-child {
+    padding-right: 0;
+}
