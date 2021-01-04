@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 
-const Navbar = ({ toggledSidebar, setToggleSidebar }) => {
+const Navbar = ({ toggleSidebar, setToggleSidebar }) => {
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbar_left}>
-                <i className={[`fas fa-bars`, styles.hamburger].join(' ')} onClick={() => setToggleSidebar((prevState) => !prevState)}></i>
+                <i className={`${toggleSidebar ? 'fas fa-times' : 'fas fa-bars'} ${styles.hamburger}`} onClick={() => setToggleSidebar((prevState) => !prevState)}></i>
                 <div className={styles.navbar_logo}>The Social Network</div>
             </div>
             <div className={styles.navbar_search}></div>
