@@ -3,8 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
+// Components
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
+
+//Pages
+import HomePage from './pages/HomePage/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
     const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -14,14 +19,12 @@ const App = () => {
             <Navbar toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
             <Sidebar toggleSidebar={toggleSidebar} />
 
-            <Switch>
-                <Route path="/">
-                    <h1>News Feed</h1>
-                </Route>
-                <Route path="/find-friends">
-                    <h1>Find Friends</h1>
-                </Route>
-            </Switch>
+            <main>
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route component={NotFoundPage} />
+                </Switch>
+            </main>
         </Router>
     );
 };
