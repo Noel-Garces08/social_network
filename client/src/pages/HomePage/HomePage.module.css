@@ -1,0 +1,42 @@
+.new_post {
+    padding: 1.1rem;
+    box-shadow: 0 0rem 2rem rgba(51, 51, 51, .25);
+    border-radius: .5rem;
+}
+
+.new_post hr {
+    margin: .75rem 0;
+    border-top: 1px solid #F0F3F4;
+}
+
+.new_post_media, .new_post_type {
+    display: flex;
+    align-items: center;
+}
+
+.new_post_media_user {
+    margin-right: 1rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.new_post_media_input {
+    width: 100%;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #F0F3F4;
+    align-self: stretch;
+    border-radius: 2.5rem;
+    padding: 0 1.6rem;
+}
+
+.new_post_button {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+}
